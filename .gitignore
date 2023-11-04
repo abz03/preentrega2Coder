@@ -1,0 +1,4 @@
+# los archivos que git debe de ignorar
+whimsical_preEntrega.png
+# Ignorar archivos de texto txt
+*.txt
