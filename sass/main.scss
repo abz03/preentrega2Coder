@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import 'responsive';  // importar SASS que contiene data en tanto a otros tamaños de pantallas
+
+body { cursor: url("/medios/cat-happy-cursor.png"), auto; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.fw-bolder {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);   // Añadir sombra al texto
+}
+
+.btn-spacing { margin-right: 15px; } //Separar un tanto los botones
+
+.imgLogoFooter {
+  width: 20px;
+  float: left;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  transition: transform 0.3s ease;
+  &.pequeno {
+    width: 10px;
+    height: 10px;
+  }
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.imagenLogo {
+  transition: transform 0.1s ease;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.contenedor-imagenCuadro { overflow: hidden; }
+
+.imagenCuadro {
+  width: 400px;
+  height: 470px;
+  transition: transform 0.3s ease;
+  &:hover { transform: scale(1.1); }
+}
+
+.bg-color {
+  background-color: #0F2C59;
+  background-size: cover;
+}
+
+.tituloBanner {
+  color: #255192;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin-top: 4%;
+}
+
+.imgCarrusel {
+  opacity: 0.85;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

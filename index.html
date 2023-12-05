@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="description" content="Tienda de venta de arte gatuna. En nuestra tienda, celebramos la belleza y la gracia de los gatos a través del arte. Nuestros cuadros capturan la esencia de estos felinos en una variedad de estilos.">
+    <meta name="keywords" content="venta, gatos, hogar, venta de cuadros, figuras temáticas, arte de gatos, decoración con gatos, cuadros de gatos, figuras de gatos, arte felino, decoración del hogar, gatos en el arte, tienda de cuadros, tienda de figuras, cuadros y figuras con tema de gatos, decoración con temática de gatos, cuadros para amantes de los gatos, figuras para amantes de los gatos">
+
+    <link rel="icon" href="./medios/logo_pestaña.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -24,14 +28,14 @@
         
         <!-- Logo y boton para volver a index  -->
         <a href="./index.html" class="navbar-brand d-flex align-items-center">
-          <img src="./medios/logo.png" class="imagenLogo" width="50" height="50" viewBox="0 0 24 24" class="mr-2"></img>
+          <img src="./medios/logo.png" class="imagenLogo" width="50" height="50" viewBox="0 0 24 24" class="mr-2" alt="Logo de la empresa"></img>
           <strong>Cuadros Remiau</strong>
         </a>
 
         <!-- botones header  -->
         <ul class="nav justify-content-end">
           <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Comprar</button>
+            <button type="button" class="btn btn-primary dropdown-toggle btn-spacing" data-bs-toggle="dropdown">Comprar</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="./pages/cuadros.html">Cuadros</a></li>
               <li><a class="dropdown-item" href="./pages/figuras.html">Figuras</a></li>
@@ -40,11 +44,11 @@
           
         <!-- botones nosotros y contacto  -->
           <li class="nav-item">
-            <a href="./pages/nosotros.html" class="btn btn-primary" role="button">Nosotros</a>
+            <a href="./pages/nosotros.html" class="btn btn-primary btn-spacing" role="button">Nosotros</a>
           </li>
 
           <li class="nav-item">
-            <a href="./pages/contacto.html" class="btn btn-primary" role="button">Contacto</a>
+            <a href="./pages/contacto.html" class="btn btn-primary btn-spacing" role="button">Contacto</a>
           </li>
 
         </ul>
@@ -63,7 +67,7 @@
       <div class="carousel-inner">
     <!-- Imagen carousel 1  -->
         <div class="carousel-item active">
-          <img src="./medios/fondogaleriap.jpg" class="imgCarrusel" alt="">
+          <img src="./medios/fondogaleriap.jpg" class="imgCarrusel" alt="Cuadros de gatos colgados en la pared">
           <div class="container">
             <div class="carousel-caption text-left">
               <h1 class="fw-bolder">¡Bienvenidos a Cuadros Remiau!</h1>
@@ -74,7 +78,7 @@
          </div>
     <!-- Imagen carousel 2  -->
          <div class="carousel-item">
-          <img src="./medios/fondogaleria3.jpg" class="imgCarrusel" alt="">
+          <img src="./medios/fondogaleria3.jpg" class="imgCarrusel" alt="Exposicion de arte con tematica de gatos">
             <div class="container">
              <div class="carousel-caption">
                <h1 class="fw-bolder"> ¡Descubre la perfecta pieza para amantes de los gatos!.</h1>
@@ -98,7 +102,7 @@
     <footer class="container py-5">
       <div class="row">
           <div class="col-4 col-md">
-            <img class="imagenLogo" src="./medios/logo.png" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></img>
+            <img class="imagenLogo" src="./medios/logo.png" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94" alt="Logo de la empresa"></line></img>
             <small class="d-block mb-3 text-muted">© 2012-2026</small>
           </div>
           <div class="col-4 col-md">
@@ -113,10 +117,10 @@
           <div class="col-4 col-md">
             <h5>Siguenos</h5>
             <ul class="list-unstyled text-small">
-              <li><img src="./medios/instagram.png" class="imgLogoFooter"></img><a class="text-muted" href="https://www.instagram.com/cats_of_instagram/?hl=es">Instagram</a></li>
-              <li><img src="./medios/linkedin.png" class="imgLogoFooter"></img><a class="text-muted" href="https://cl.linkedin.com/company/cat-consulting">LinkeId</a></li>
-              <li><img src="./medios/youtube.png" class="imgLogoFooter"></img><a class="text-muted" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>  
-              <li><img src="./medios/extwitter.png" class="imgLogoFooter"></img><a class="text-muted" href="https://twitter.com/?lang=es">X</a></li>     
+              <li><img src="./medios/instagram.png" class="imgLogoFooter" alt="Logo de instagram"></img><a class="text-muted" href="https://www.instagram.com/cats_of_instagram/?hl=es">Instagram</a></li>
+              <li><img src="./medios/linkedin.png" class="imgLogoFooter" alt="Logo de LinkeId"></img><a class="text-muted" href="https://cl.linkedin.com/company/cat-consulting">LinkeId</a></li>
+              <li><img src="./medios/youtube.png" class="imgLogoFooter" alt="Logo de youtube"></img><a class="text-muted" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>  
+              <li><img src="./medios/extwitter.png" class="imgLogoFooter" alt="Logo de X"></img><a class="text-muted" href="https://twitter.com/?lang=es">X</a></li>     
             </ul>
           </div>
 

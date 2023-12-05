@@ -1,83 +1,12 @@
 @charset "UTF-8";
-body {
-  cursor: url("/medios/cat-happy-cursor.png"), auto;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-.fw-bolder {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.imgLogoFooter {
-  width: 20px;
-  float: left;
-  margin-left: 0.5%;
-  margin-top: 0.5%;
-  transition: transform 0.3s ease;
-}
-.imgLogoFooter.pequeno {
-  width: 10px;
-  height: 10px;
-}
-.imgLogoFooter:hover {
-  transform: scale(1.5);
-}
-
-.imagenLogo {
-  transition: transform 0.3s ease;
-}
-.imagenLogo:hover {
-  transform: scale(1.3);
-}
-
-.imagenCuadro {
-  transition: transform 0.3s ease;
-}
-.imagenCuadro:hover {
-  transform: scale(1.1);
-}
-
-.bg-color {
-  background-color: #0F2C59;
-  background-size: cover;
-}
-
-.tituloBanner {
-  color: #255192;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  margin-top: 4%;
-}
-
-.imgCarrusel {
-  opacity: 0.85;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.imagenCuadro {
-  width: 400px;
-  height: 470px;
-}
-
 @media only screen and (max-width: 600px) {
   .navbar {
-    background-color: lightblue;
     width: 100%;
     flex-direction: column;
+  }
+  .fw-bolder, h1 {
+    font-size: calc(0.8rem + 0.8vw);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   .imagenNosotros, .imagenCuadro {
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -106,5 +35,83 @@ body {
     animation-name: slidein;
   }
 }
+body {
+  cursor: url("/medios/cat-happy-cursor.png"), auto;
+}
 
-/*# sourceMappingURL=estilos.css.map */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.fw-bolder {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-spacing {
+  margin-right: 15px;
+}
+
+.imgLogoFooter {
+  width: 20px;
+  float: left;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+  transition: transform 0.3s ease;
+}
+.imgLogoFooter.pequeno {
+  width: 10px;
+  height: 10px;
+}
+.imgLogoFooter:hover {
+  transform: scale(1.5);
+}
+
+.imagenLogo {
+  transition: transform 0.1s ease;
+}
+.imagenLogo:hover {
+  transform: scale(1.3);
+}
+
+.contenedor-imagenCuadro {
+  overflow: hidden;
+}
+
+.imagenCuadro {
+  width: 400px;
+  height: 470px;
+  transition: transform 0.3s ease;
+}
+.imagenCuadro:hover {
+  transform: scale(1.1);
+}
+
+.bg-color {
+  background-color: #0F2C59;
+  background-size: cover;
+}
+
+.tituloBanner {
+  color: #255192;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin-top: 4%;
+}
+
+.imgCarrusel {
+  opacity: 0.85;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=main.css.map */

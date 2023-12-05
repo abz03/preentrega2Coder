@@ -1,11 +1,7 @@
+@charset "UTF-8";
 
 body {
   cursor: url("/medios/cat-happy-cursor.png"), auto;
-}
-
-.fw-bolder , h1 {
-  animation-duration: 3s;
-  animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -13,32 +9,43 @@ body {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
 
-.imgLogoFooter{
-  width: 20px; 
+.fw-bolder {
+  // Añadir sombra al texto
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.imgLogoFooter {
+  width: 20px;
   float: left;
   margin-left: 0.5%;
   margin-top: 0.5%;
-  transition: transform 0.3s ease; // Transición suave
+  transition: transform 0.3s ease;
   &.pequeno {
     width: 10px;
     height: 10px;
   }
   &:hover {
-    transform: scale(1.5); // Aumenta ligeramente el tamaño
+    transform: scale(1.5);
   }
 }
 
 .imagenLogo {
-  transition: transform 0.3s ease; // Transición suave
+  transition: transform 0.3s ease;
   &:hover {
-    transform: scale(1.3); // Aumenta ligeramente el tamaño
+    transform: scale(1.3);
+  }
+}
+
+.imagenCuadro {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -61,6 +68,14 @@ body {
   background-position: center;
   width: 100%;
   height: 100%;
+
+  // Agregar sombra al texto
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.imagenCuadro {
+  width: 400px;
+  height: 470px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -70,13 +85,20 @@ body {
     flex-direction: column;
   }
 
+  .imagenNosotros, .imagenCuadro {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
   .imagenNosotros {
     width: 400px;
     height: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
   }
 
-  .btnPantallaPequeña {
+  .imagenCuadro {
+    width: 300px;
+    height: 370px;
+  }
+
+  .btnPantallaPequeña, .btn {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -85,5 +107,13 @@ body {
   .btn {
     display: flex;
     flex-direction: column;
+  }
+}
+
+// Media query para pantallas más grandes y solucionar un bug en pantallas mas pequeñas
+@media only screen and (min-width: 1000px) {
+  .fw-bolder, h1 {
+      animation-duration: 3s;
+      animation-name: slidein;
   }
 }

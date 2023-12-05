@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+  .fw-bolder, h1 {
+    font-size: calc(0.8rem + 0.8vw);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+ 
+
+  .imagenNosotros, .imagenCuadro {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .imagenNosotros {
+    width: 400px;
+    height: 300px;
+  }
+
+  .imagenCuadro {
+    width: 300px;
+    height: 370px;
+  }
+
+  .btnPantallaPequeña, .btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Media query para pantallas más grandes y solucionar un bug en pantallas mas pequeñas
+@media only screen and (min-width: 1000px) {
+  .fw-bolder, h1 {
+      animation-duration: 3s;
+      animation-name: slidein;
+  }
+}
