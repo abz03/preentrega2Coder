@@ -7,7 +7,6 @@ medios/Git-2.42.0.2-64-bit.exe
 
 # Ignorar archivos css de mas
 css/style.css
-css/estilos.css
 
 # Ignorar archivo SASS
 sass/estilos.scss
