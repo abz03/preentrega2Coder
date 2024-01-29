@@ -10,3 +10,6 @@ css/style.css
 
 # Ignorar archivo SASS
 sass/estilos.scss
+
+# Ignorar archivo Figuras, sera usado en proxima entrega
+pages/figuras.html
