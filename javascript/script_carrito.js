@@ -1,9 +1,3 @@
-
-// Se ejecuta cuando la ventana se carga
-window.onload = function() {
-    mostrarCarrito(); // Llama a la función para mostrar los productos del carrito
-};
-
 // Función para mostrar los productos en el carrito
 function mostrarCarrito() {
     // Obtiene el contador de productos del localStorage o lo inicializa a 0 si no existe
@@ -19,8 +13,24 @@ function mostrarCarrito() {
         let precio = localStorage.getItem('precioCuadro' + i);
 
         // Crea un nuevo div para mostrar la información del producto
-        let divProducto = document.createElement('div');
+        let divProducto = document.createElement('div');    // Crea el div y lo asocia a una variable
         divProducto.textContent = nombre + ' - $' + precio; // Configura el texto del div con el nombre y precio con formato y que se vea UX (ojala)
-        divCarrito.appendChild(divProducto); // Añade el div del producto al div del carrito, una frase muy entendible
+        divCarrito.appendChild(divProducto);                // Añade el div del producto al div del carrito para mantener un orden en el HTML.
     }
 }
+
+// Función para eliminar el carrito
+function borrarCarrito() {
+    localStorage.removeItem('contadorCarrito');   // Elimina los elementos del localStorage
+    alert('Carrito borrado.');                    // Avisa que se borro
+    location.reload();                            //Recarga la pestaña para que desapazcan los productos
+}
+
+// Se ejecuta cuando la ventana se carga
+window.onload = function() {
+    mostrarCarrito();                     // Llama a la función para mostrar los productos del carrito
+    document.getElementById('borrarCarrito').addEventListener('click', function() {  // genera un evento en base a que se de un click en el boton especificado por id
+        borrarCarrito();                  // Llama a la función para borrar el carrito
+    });
+};
+
